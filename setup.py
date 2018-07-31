@@ -2,7 +2,7 @@ from distutils.core import setup
 import os
 
 local_file = lambda *f: \
-    open(os.path.join(os.path.dirname(__file__), *f)).read()
+    open(os.path.join(os.path.dirname(__file__), *f), encoding="utf8").read()
 
 setup(
     name='icm-python-client',
